@@ -28,8 +28,16 @@
      document.write(`Acertos em Português: ${notapor}<br>`)
      document.write(`Acertos em Matemática: ${notamat}<br>`)
      document.write(`Acertos em Conhecimentos Específicos: ${notaesp}<br>`)
-     total_acertos = (notapor+notamat+notaesp)
+     total_acertos = notapor+notamat+notaesp
      document.write(`Total de acertos:${total_acertos}<br>`)
+     var pontospor = notapor*2
+     var pontosmat = notamat*1
+     var pontosesp = notaesp*3
+     total_pontos = pontospor + pontosmat + pontosesp
+     document.write(`Total de pontos:${total_pontos}<br>`)
+
+     
+
      
     </script>
     
