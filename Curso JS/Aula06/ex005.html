@@ -20,10 +20,40 @@
     <h1>Iniciando os Estudos DOM</h1>
     <p><strong>Aqui</strong> vai o resultado</p>
     <p>Aprendendo usar <strong>DOM</strong> em Javascript</p>
-    <div>Clique em mim</div>
+    <div id="msg">Clique em mim</div>
     <script>
-        var p1 = window.document.getElementsByTagName('p')[0]
-        p1.style.color = "black"
+        var d = window.document.getElementById("msg")
+        d.style.background = "green"
+        d.innerText = 'Estou aguardando...'
+        /*
+        1.	Por Marca
+PLURAL getElementsByTagName(#'')[x]
+ Escrevendo: #x.innerText = " "
+
+
+2.	Por ID
+SINGULAR getElementByild(#)
+Escrevendo: #.innerText = " "
+
+3.	Por Nome
+PLURAL getElementsByName(#'')[x]
+Escrevendo: #x.innerText = " "
+
+4.	Por Classe
+PLURAL getElementsByClassName(#'')[x]
+Escrevendo: #.innerText = " "
+
+5.	Por Seletor
+SINGULAR querySelector(#)
+PLURAL querySelectorAll(#'')[x]
+Escrevendo: #.innerText = " "
+Escrevendo: #x.innerText = " "     
+        
+        
+        
+        
+        
+        */
        
 
         

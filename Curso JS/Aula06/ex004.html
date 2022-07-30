@@ -19,22 +19,29 @@
     </style>
 </head>
 <body>
-
+    
     <script> 
     
-     var notapor = Number(window.prompt('Digite sua nota de Portugues: '))
-     var notamat = Number(window.prompt('Digite sua nota em matemática: '))
-     var notaesp = Number(window.prompt('Digite sua nota em Conhecimentos Específicos: '))
-     document.write(`Acertos em Português: ${notapor}<br>`)
-     document.write(`Acertos em Matemática: ${notamat}<br>`)
-     document.write(`Acertos em Conhecimentos Específicos: ${notaesp}<br>`)
-     total_acertos = notapor+notamat+notaesp
-     document.write(`Total de acertos:${total_acertos}<br>`)
-     var pontospor = notapor*2
-     var pontosmat = notamat*1
-     var pontosesp = notaesp*3
-     total_pontos = pontospor + pontosmat + pontosesp
-     document.write(`Total de pontos:${total_pontos}<br>`)
+     var acertosp = Number(window.prompt("Acertos em Português: "))
+     var acertosm = Number(window.prompt("Acertos em Matemática: "))
+     var acertosesp = Number(window.prompt("Acertos em Conhecimentos Específicos: "))
+     var pontosp = acertosp*2
+     var pontosm = acertosm*1
+     var pontosesp = acertosesp*3
+     var idade = Number(window.prompt("Sua Idade: "))
+     var metroscorrida = Number(window.prompt("Metragem da corrida: "))
+     var apoio = Number(window.prompt("Total de Flexões: "))
+     var abd = Number (window.prompt(" Total de Abdominais: "))
+     var tiro = Number(window.prompt("Tempo dos 50 Metros: "))
+     var totalacertos = acertosp+acertosm+acertosesp
+     var totalpontos = pontosp+pontosm+pontosesp
+     window.document.write(`O total de acertos foi de ${totalacertos}.<br>`)
+     window.document.write(`O total de pontos em português ${pontosp}.<br>`)
+     window.document.write(`O total de pontos em matemática ${pontosm}.<br>`)
+     window.document.write(`O total de pontos em conhecimentos específicos ${pontosesp}.<br>`)
+     window.document.write(`Sua pontuação total da prova foi de ${totalpontos}`)
+     
+
 
      
 
